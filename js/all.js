@@ -3,7 +3,7 @@ $(function () {
         event.preventDefault();
         $.ajax({
             type: 'GET',
-            url: 'http://data.kaohsiung.gov.tw/Opendata/DownLoad.aspx?Type=2&CaseNo1=AE&CaseNo2=2&FileType=1&Lang=C&FolderType=%27',
+            url: 'https://data.kaohsiung.gov.tw/Opendata/DownLoad.aspx?Type=2&CaseNo1=AE&CaseNo2=2&FileType=1&Lang=C&FolderType=',
             success: function (data) {
                 var thisData = JSON.parse(data);
                 var map;
