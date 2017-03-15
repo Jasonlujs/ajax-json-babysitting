@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" type="text/css" href="css/all.css">
+  </head>
+  <body>
+  <div class="header">
+<h1>高雄市托嬰中心查詢</h1>
+<p>嬰幼兒生活照顧、發展學習、衛生保健、親職教育</p>
+  <div class="select">
+  	    <select id="free">
+                        <option value="全區" selected>全區
+                        </option>
+                        <option value="楠梓區">楠梓區</option>
+                        <option value="左營區">左營區</option>
+                        <option value="鼓山區">鼓山區</option>
+                        <option value="三民區">三民區</option>
+                        <option value="苓雅區">苓雅區</option>
+                        <option value="前鎮區">前鎮區</option>
+                        <option value="小港區">小港區</option>
+                        <option value="鳳山區">鳳山區</option>
+                        <option value="阿蓮區">阿蓮區</option>
+                        <option value="岡山區">岡山區</option>
+                        <option value="鳥松區">鳥松區</option>
+                        <option value="大寮區">大寮區</option>
+                        <option value="林園區">林園區</option>
+                        <option value="橋頭區">橋頭區</option>
+    </select>
+    <input type="button" value="搜尋" class="search">
+    </div>
+  </div>
+<div class="map">
+        <div id="map"></div>
+</div>
+  <script>
+    var map
+    function initMap() {
+      console.log('in initmap')
+      // Create a map object and specify the DOM element for display.
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 22.6596497, lng: 120.3065768},
+        scrollwheel: true,
+        zoom: 13
+      });
+      console.log('after init')
+    }
+  </script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/all.js"></script>  
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzEpUyOl-fb2aqw8F4oGoQcAL_jRucrOs&callback=initMap">
+    </script>
+</body>
+</html>
