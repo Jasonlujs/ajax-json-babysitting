@@ -56,6 +56,8 @@ $(function () {
                             showInfo(map, this);
                         }); // End of area addListener
                     } 
+
+
                      if ($('#free').val() === '全區') {
                         marker[i] = new google.maps.Marker({
                             position: new google.maps.LatLng(thisData[i].lat, thisData[i].lng),
